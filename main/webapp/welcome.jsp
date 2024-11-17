@@ -8,13 +8,12 @@
 <body>
 <div class="container py-4">
 	<%@ include file="menu.jsp" %>
+	<%! String greeting="도서 쇼핑몰에 오신 것을 환영합니다";
+	String tagline="Welcome to Web Market!"; %>
 	
-<%! String greeting="Welcome to Book Shopping Mall";
-String tagline="Welcome to Web Market!"; %>
-
 	<div class="p-5 mb-4 bg-body-tertiary rounded-3">
 		<div class="container-fluid py-5">
-			<h1 class="display-5 fw-bold"><%=greeting %></h1>
+			<h1 class="display-5 fw-bold"><%=greeting%></h1>
 			<p class="col-md-8 fs-4">BookMarket</p>
 		</div>
 	</div>

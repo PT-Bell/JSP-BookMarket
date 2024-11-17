@@ -14,6 +14,7 @@
 <fmt:bundle basename="bundle.message">
 <div class="container py-4">
 	<%@include file="menu.jsp" %>
+	
 	<div class="p-5 mb-4 bg-body-tertiary rounded-3">
 		<div class="container-fluid py-5">
 			<h1 class="display-5 fw-bold"><fmt:message key="title" /></h1>
@@ -24,8 +25,9 @@
 	<div class="row align-items-md-stretch">
 		<div class="text-end">
 			<a href="?language=ko">Korean</a> | <a href="?language=en">English</a>
+			<a href="logout.jsp" class="btn btn-sm btn-success pull right">logout</a>
 		</div>
-		<form name="newBook" action="./processAddBook.jsp" method="post">
+		<form name="newBook" action="./processAddBook.jsp" class="form-horizontal" method="post" enctype="multipart/form-data">
 			<div class="mb-3 row">
 				<label class="col-sm-2"><fmt:message key="bookId" /></label>
 				<div class="col-sm-3">

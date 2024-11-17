@@ -1,6 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <%@ page import="dto.Book"%>
-<%@ page import="dao.BookRepository" %>
+<%@ page import="dao.BookRepository"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -32,12 +33,16 @@
 			</div>
 		</div>
 		<%
-			String id = request.getParameter("id");
-			BookRepository dao = BookRepository.getInstance();
-			Book book = dao.getBookById(id);
+		String id = request.getParameter("id");
+		BookRepository dao = BookRepository.getInstance();
+		Book book = dao.getBookById(id);
 		%>
 		<div class="row align-items-md-stretch">
-			<div class="col-md-12">
+			<div class="col-md-5">
+				<img src="./resources/images/<%=book.getFilename()%>"
+					style="width: 70%">
+			</div>
+			<div class="col-md-6">
 				<h3>
 					<b><%=book.getName()%></b>
 				</h3>
@@ -62,8 +67,8 @@
 				<h4><%=book.getUnitPrice()%>원
 				</h4>
 				<p>
-				<form name="addForm"
-					action="./addCart_jsp?id=<%=book.getBookId()%>" method="POST">
+				<form name="addForm" action="./addCart_jsp?id=<%=book.getBookId()%>"
+					method="POST">
 					<p>
 						<a href="#" class="btn btn-info" onclick="addToCart()">도서주문
 							&raquo;</a> <a href="./cart.jsp" class="btn btn-warning">장바구니
