@@ -15,7 +15,7 @@
         <!-- 오른쪽: 버튼 그룹 -->
         <div>
             <a href="./books.jsp" class="btn btn-primary me-2">Books</a>
-            <a href="./addCart.jsp" class="btn btn-success">Add to Cart</a>
+            <a href="./cart.jsp" class="btn btn-success">Cart</a>
         </div>
     </div>
 </header>
