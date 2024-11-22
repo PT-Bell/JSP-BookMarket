@@ -6,11 +6,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link
-	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-	rel="stylesheet"
-	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-	crossorigin="anonymous">
+<link rel="stylesheet" href="./resources/css/bootstrap.min.css" />
 <meta charset="UTF-8">
 <%
 String cartId = session.getId();
@@ -32,8 +28,7 @@ String cartId = session.getId();
 				<table width="100%">
 					<tr>
 						<td align="left"><a
-							href="./deleteCart.jsp?cartId=<%=cartId%>"
-							class="btn btn-danger">삭제하기</a></td>
+							href="./deleteCart.jsp?cartId=<%=cartId%>" class="btn btn-danger">삭제하기</a></td>
 						<td align="right"><a
 							href="./shippingInfo.jsp?cartId=<%=cartId%>"
 							class="btn btn-success" class="btn btn-success">주문하기</a></td>
@@ -67,8 +62,7 @@ String cartId = session.getId();
 					<td><%=book.getUnitPrice()%></td>
 					<td><%=book.getQuantity()%></td>
 					<td><%=total%></td>
-					<td><a href="./removeCart.jsp" id=<%=book.getBookId()%>
-						" class="badge text-bg-danger">삭제</a></td>
+					<td><a href="./removeCart.jsp" id=<%=book.getBookId()%> class="badge text-bg-danger">삭제</a></td>
 				</tr>
 				<%
 				}

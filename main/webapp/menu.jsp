@@ -1,7 +1,7 @@
+<%@ page contentType="text/html; charset=utf-8" %>
 <header class="pb-3 mb-4 border-bottom">
-    <div class="d-flex justify-content-between align-items-center">
-        <!-- 왼쪽: Home 링크 -->
-        <a href="./welcome.jsp" class="d-flex align-items-center text-dark text-decoration-none">
+    <div class="d-flex flex-wrap justify-content-lg-start justify-content-between align-items-center">
+        <a href="./welcome.jsp" class="d-flex align-items-center mb-3 md-md-0 me-md-auto text-dark text-decoration-none">
             <svg width="32" height="32" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
                 <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0.708.708L8
 				2.20716 .646 6.647a.5.5 0 0 0.708-708L13 5.793V2.5a.5.5 0 0 0-.5-.5h1a.5.5
@@ -10,9 +10,12 @@
 				13 .5V9.29316-6Z" />
             </svg>
             <span class="fs-4">Home</span>
+            <ul class="nav nav-pills">
+            	<li class="nav-item"><a href="./books.jsp" class="nav-link">도서 목록</a></li>
+            </ul>
         </a>
 
-        <!-- 오른쪽: 버튼 그룹 -->
+        <!-- ì¤ë¥¸ìª½: ë²í¼ ê·¸ë£¹ -->
         <div>
             <a href="./books.jsp" class="btn btn-primary me-2">Books</a>
             <a href="./cart.jsp" class="btn btn-success">Cart</a>

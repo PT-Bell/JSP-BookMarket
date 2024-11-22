@@ -26,7 +26,7 @@
 		}
 	}
 	
-	ArrayList<Book> list = (ArrayList<Book>) session.getAttribute("cartlist");
+	ArrayList<Book> list = (ArrayList<Book>)session.getAttribute("cartlist");
 	if(list == null) {
 		list=new ArrayList<Book>();
 		session.setAttribute("cartlist", list);

@@ -2,11 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link
-	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-	rel="stylesheet"
-	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-	crossorigin="anonymous">
+<link rel="stylesheet" href="./resources/css/bootstrap.min.css" />
 <meta charset="UTF-8">
 <title>배송 정보</title>
 </head>
@@ -15,7 +11,7 @@
 	<%@ include file="menu.jsp" %>
 	
 	<div class="p-5 mb-4 bg-body-tertiary rounded-3">
-		<div calss="container-fluid py-5">
+		<div class="container-fluid py-5">
 			<h1 class="display-5 fw-bold">배송 정보</h1>
 			<p class="col-md-8 fs-4">Shipping Info</p>
 		</div>

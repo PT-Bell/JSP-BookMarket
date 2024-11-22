@@ -12,3 +12,5 @@ CREATE TABLE IF NOT EXISTS book(
 	b_fileName VARCHAR(20),
 	PRIMARY KEY (b_id)
 	) default CHARSET=utf8;
+
+SELECT * From book;
