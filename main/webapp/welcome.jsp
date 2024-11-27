@@ -1,9 +1,11 @@
-<%@ page contentType="text/html; charset=utf-8" %>
+<%@ page language="java" contentType="text/html; charset=utf-8" 
+	pageEncoding="UTF-8" %>
 <%@ page import="java.util.Date" %>
 <!DOCTYPE html>
 <head>
 	<link rel="stylesheet" href="./resources/css/bootstrap.min.css" />
 	<title>Welcome </title>
+	<meta charset="UTF-8">
 </head>
 <body>
 <div class="container py-4">

@@ -1,8 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="java.net.URLDecoder" %>
-<%@ page import="dto.Product" %>
-<%@ page import="dao.ProductRepository" %>
+<%@ page import="dto.Book" %>
+<%@ page import="dao.BookRepository" %>
 
 <%
     request.setCharacterEncoding("UTF-8");
@@ -61,12 +61,12 @@
             <div class="row justify-content-between">
                 <div class="col-4 align-left">
                     <strong>배송 주소</strong><br>
-                    성명: <%= shipping_name %><br>
-                    우편번호: <%= shipping_zipCode %><br>
-                    주소: <%= shipping_addressName %>, <%= shipping_country %><br>
+                    성명: <% out.println(shipping_name); %><br>
+                    우편번호: <% out.println(shipping_zipCode); %><br>
+                    주소: <% out.println(shipping_addressName); %>(<%out.println(shipping_country); %>)<br>
                 </div>
                 <div class="col-4 align-right">
-                    <p><em>배송일: <%= shipping_shippingDate %></em></p>
+                    <p><em>배송일: <% out.println(shipping_shippingDate); %></em></p>
                 </div>
             </div>
 
